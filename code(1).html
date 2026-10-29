@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0f131c;}body{overscroll-behavior:none;font-family:'IBM Plex Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed": "#62ff96", "outline": "#859585", "secondary-fixed": "#b6ebff", "on-tertiary-container": "#006041", "surface-dim": "#0f131c", "on-tertiary-fixed-variant": "#005236", "surface-tint": "#00e475", "on-tertiary": "#003824", "tertiary-container": "#50e0a5", "surface-variant": "#31353f", "on-error-container": "#ffdad6", "primary-fixed-dim": "#00e475", "on-error": "#690005", "secondary-container": "#00d2ff", "on-primary": "#003918", "on-primary-container": "#00612e", "tertiary-fixed-dim": "#4edea3", "secondary": "#a5e7ff", "on-surface-variant": "#bacbb9", "surface-container-low": "#181b25", "error-container": "#93000a", "secondary-fixed-dim": "#47d6ff", "surface-container-lowest": "#0a0e17", "background": "#0f131c", "inverse-surface": "#dfe2ef", "error": "#ffb4ab", "tertiary": "#71fdbf", "surface": "#0f131c", "surface-container-highest": "#31353f", "surface-bright": "#353943", "tertiary-fixed": "#6ffbbe", "on-tertiary-fixed": "#002113", "on-background": "#dfe2ef", "on-surface": "#dfe2ef", "on-secondary-fixed": "#001f28", "on-primary-fixed-variant": "#005226", "on-secondary-fixed-variant": "#004e60", "outline-variant": "#3b4a3d", "surface-container-high": "#262a34", "inverse-on-surface": "#2c303a", "on-secondary": "#003543", "primary": "#75ff9e", "inverse-primary": "#006d35", "on-primary-fixed": "#00210b", "on-secondary-container": "#00566a", "surface-container": "#1c1f29", "primary-container": "#00e676" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "0.875rem", "gutter": "1rem", "space-lg": "1.25rem", "margin": "1rem", "space-xl": "1.75rem", "space-sm": "0.5rem", "space-xs": "0.25rem" }, fontFamily: { "label-caps": ["IBM Plex Sans"], "body-lg": ["IBM Plex Sans"], "display-hero": ["IBM Plex Sans"], "body-md": ["IBM Plex Sans"], "headline-md": ["IBM Plex Sans"], "caption-sm": ["IBM Plex Sans"], "headline-lg": ["IBM Plex Sans"], "display-hero-mobile": ["IBM Plex Sans"], "telemetry-mono": ["Space Mono"] }, fontSize: { "label-caps": ["12px", { lineHeight: "16px", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "display-hero": ["34px", { lineHeight: "42px", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-md": ["18px", { lineHeight: "26px", fontWeight: "600" }], "caption-sm": ["11px", { lineHeight: "14px", fontWeight: "400" }], "headline-lg": ["22px", { lineHeight: "30px", fontWeight: "600" }], "display-hero-mobile": ["28px", { lineHeight: "36px", fontWeight: "700" }], "telemetry-mono": ["13px", { lineHeight: "18px", fontWeight: "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col h-24 px-margin justify-between pb-space-xs"><div class="flex items-center justify-between w-full h-8"><div class="flex items-center gap-space-xs text-on-surface font-telemetry-mono text-caption-sm"><span class="material-symbols-outlined text-[14px]">wifi</span><span class="material-symbols-outlined text-[16px]">battery_charging_full</span></div><div class="h-5 w-24 bg-surface-container-lowest rounded-full flex items-center justify-center"><div class="w-2 h-2 rounded-full bg-primary animate-pulse ml-space-xs"></div><span class="font-telemetry-mono text-caption-sm text-primary tracking-wider">LIVE</span></div><span class="font-telemetry-mono text-caption-sm text-on-surface font-bold">9:41</span></div><div class="flex items-center justify-between w-full h-14"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">verified</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-on-surface tracking-tight">Archive</span></div><span class="font-caption-sm text-caption-sm text-on-surface-variant font-telemetry-mono">V1.4 • MADRASATI_AI</span></div></div><div class="flex items-center gap-space-sm"><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-primary/10 shadow-[0_0_12px_rgba(117,255,158,0.15)]"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span><span class="font-label-caps text-label-caps text-primary">الطيار الآلي نشط</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="flex flex-col relative w-full pt-24 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin pb-space-xl">
+<!-- Dynamic Atmospheric Glow -->
+<div class="relative w-full mb-space-lg">
+<!-- Achievement Cockpit Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high/90 backdrop-blur-xl p-space-lg shadow-xl">
+<!-- Glow Aura -->
+<div class="absolute -top-12 -left-12 w-44 h-44 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-10 -right-10 w-40 h-40 rounded-full bg-secondary-container/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<!-- Badge & Operational State -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-lowest text-primary">
+<span class="material-symbols-outlined text-[16px] animate-pulse">verified</span>
+<span class="font-label-caps text-label-caps">أرشيف العمليات المشفر</span>
+</div>
+<span class="font-telemetry-mono text-caption-sm text-on-surface-variant">SEC-LOG • 2024.11</span>
+</div>
+<!-- Headline Metric -->
+<div class="flex flex-col">
+<span class="font-caption-sm text-caption-sm text-on-surface-variant">ملخص الأداء الشهري للطيار الآلي</span>
+<div class="flex items-baseline gap-space-sm mt-space-xs">
+<span class="font-display-hero-mobile text-display-hero-mobile text-primary font-bold tracking-tight">28</span>
+<span class="font-headline-md text-headline-md text-on-surface">واجب تم إنجازه تلقائياً</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant mt-space-xs">خلال دورة المزامنة الحالية لشهر نوفمبر بنجاح قياسي</span>
+</div>
+<!-- Micro-Metrics HUD Strip -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-sm bg-surface-container-lowest/60 rounded-lg p-space-sm">
+<div class="flex flex-col items-center justify-center p-space-xs text-center">
+<span class="font-caption-sm text-caption-sm text-on-surface-variant mb-space-xs flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px] text-primary">task_alt</span>
+              نسبة الدقة
+            </span>
+<span class="font-telemetry-mono text-headline-md text-primary font-bold">100%</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-xs text-center">
+<span class="font-caption-sm text-caption-sm text-on-surface-variant mb-space-xs flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px] text-secondary">speed</span>
+              زمن المعالجة
+            </span>
+<span class="font-telemetry-mono text-headline-md text-secondary font-bold">1.1 ث</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-xs text-center">
+<span class="font-caption-sm text-caption-sm text-on-surface-variant mb-space-xs flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px] text-tertiary">gpp_good</span>
+              أخطاء النظام
+            </span>
+<span class="font-telemetry-mono text-headline-md text-tertiary font-bold">0</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Search & Filter Controls -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<!-- Search Bar Input -->
+<div class="relative flex items-center w-full">
+<span class="material-symbols-outlined absolute right-space-md text-on-surface-variant text-[20px] pointer-events-none">search</span>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md rounded-xl py-space-md pr-12 pl-space-lg focus:outline-none focus:bg-surface-container transition-all shadow-sm" id="search-input" placeholder="ابحث باسم المادة، المعلم، أو موضوع الدرس..." type="text"/>
+<button aria-label="مسح البحث" class="hidden absolute left-space-md w-6 h-6 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant" id="clear-search-btn" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Horizontal Category Filter Pills (Scrollable) -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-space-xs -mx-margin px-margin">
+<button class="filter-pill flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-caps text-label-caps whitespace-nowrap shadow-sm transition-transform active:scale-95" data-filter="all">
+<span>جميع المواد</span>
+<span class="font-telemetry-mono px-space-xs py-0.5 rounded-full bg-on-primary/20 text-on-primary">28</span>
+</button>
+<button class="filter-pill flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-caps text-label-caps whitespace-nowrap hover:bg-surface-container-high transition-transform active:scale-95" data-filter="math">
+<span>الرياضيات</span>
+<span class="font-telemetry-mono px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface">8</span>
+</button>
+<button class="filter-pill flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-caps text-label-caps whitespace-nowrap hover:bg-surface-container-high transition-transform active:scale-95" data-filter="science">
+<span>العلوم</span>
+<span class="font-telemetry-mono px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface">6</span>
+</button>
+<button class="filter-pill flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-caps text-label-caps whitespace-nowrap hover:bg-surface-container-high transition-transform active:scale-95" data-filter="arabic">
+<span>لغتي الخالدة</span>
+<span class="font-telemetry-mono px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface">7</span>
+</button>
+<button class="filter-pill flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-caps text-label-caps whitespace-nowrap hover:bg-surface-container-high transition-transform active:scale-95" data-filter="islamic">
+<span>الدراسات الإسلامية</span>
+<span class="font-telemetry-mono px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface">7</span>
+</button>
+</div>
+</div>
+<!-- Timeline Feed Label -->
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant">الواجبات المكتملة حديثاً</span>
+<span class="font-telemetry-mono text-caption-sm text-primary flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+      محدث تلقائياً
+    </span>
+</div>
+<!-- Chronological Assignment List -->
+<div class="flex flex-col gap-space-md" id="assignment-list">
+<!-- Card 1: الرياضيات -->
+<div class="assignment-card group relative overflow-hidden rounded-xl bg-surface-container/70 p-space-lg shadow-md transition-all hover:bg-surface-container" data-category="math" data-lesson="العمليات على الكسور العشرية والنسبة المئوية" data-teacher="عبدالعزيز الشمري" data-title="الرياضيات">
+<!-- Glow Accent -->
+<div class="absolute top-0 right-0 w-1.5 h-full bg-primary rounded-r"></div>
+<div class="flex flex-col gap-space-md">
+<!-- Card Top Bar: Icon + Subject + Time Badge -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-11 h-11 shrink-0 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">calculate</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface truncate">الرياضيات</span>
+<span class="font-caption-sm text-caption-sm text-on-surface-variant truncate">الصف الثاني متوسط</span>
+</div>
+<span class="font-caption-sm text-caption-sm text-on-surface-variant flex items-center gap-space-xs mt-0.5">
+<span class="material-symbols-outlined text-[13px]">person</span>
+                أ. عبدالعزيز الشمري
+              </span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-telemetry-mono text-caption-sm text-primary bg-primary/10 px-space-sm py-0.5 rounded-full">
+              منذ قليل • 14:32
+            </span>
+</div>
+</div>
+<!-- Lesson Headline -->
+<div class="bg-surface-container-low/70 rounded-lg p-space-md flex flex-col gap-space-xs">
+<span class="font-caption-sm text-caption-sm text-on-surface-variant">موضوع الواجب</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold leading-relaxed">
+            الوحدة الرابعة: العمليات على الكسور العشرية والنسبة المئوية
+          </span>
+</div>
+<!-- Result Status Banner -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-primary-container/15 text-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-caps text-label-caps">تم التسليم تلقائياً (5 من 5 صحيحة)</span>
+</div>
+<span class="font-telemetry-mono text-caption-sm font-bold">100% الدرجة الكاملة</span>
+</div>
+<!-- Collapsible Details Toggle (Interactivity) -->
+<div class="flex flex-col pt-space-xs">
+<button aria-expanded="false" class="toggle-details-btn flex items-center justify-between w-full py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">visibility</span>
+<span class="font-caption-sm text-caption-sm">معاينة الأسئلة والإجابات والتحليل</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-telemetry-mono text-caption-sm text-on-surface-variant">MDR-94812</span>
+<span class="material-symbols-outlined text-[18px] transition-transform chevron-icon">expand_more</span>
+</div>
+</button>
+<!-- Drawer Content -->
+<div class="details-content hidden flex flex-col gap-space-sm mt-space-sm pt-space-sm bg-surface-container-lowest/80 rounded-lg p-space-md">
+<div class="flex items-center justify-between text-on-surface-variant font-telemetry-mono text-caption-sm">
+<span>خوارزمية الاستنتاج: GPT-Math v4.2</span>
+<span class="text-primary">زمن التنفيذ: 0.9 ثانية</span>
+</div>
+<div class="flex flex-col gap-space-xs text-on-surface font-body-md text-body-md">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>س١: تحويل الكسر الاعتيادي ٣/٤ إلى نسبة مئوية -&gt; ٧٥٪</span>
+</div>
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>س٢: إيجاد قيمة الزيادة بنسبة ١٥٪ للمبلغ ٢٠٠ ريال -&gt; ٢٣٠ ريال</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: العلوم العامة -->
+<div class="assignment-card group relative overflow-hidden rounded-xl bg-surface-container/70 p-space-lg shadow-md transition-all hover:bg-surface-container" data-category="science" data-lesson="الجدول الدوري والتفاعلات الكيميائية" data-teacher="سامي الغامدي" data-title="العلوم العامة">
+<div class="absolute top-0 right-0 w-1.5 h-full bg-secondary-container rounded-r"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-11 h-11 shrink-0 rounded-xl bg-secondary-container/10 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">science</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface truncate">العلوم العامة</span>
+<span class="font-caption-sm text-caption-sm text-on-surface-variant truncate">الصف الثاني متوسط</span>
+</div>
+<span class="font-caption-sm text-caption-sm text-on-surface-variant flex items-center gap-space-xs mt-0.5">
+<span class="material-symbols-outlined text-[13px]">person</span>
+                أ. سامي الغامدي
+              </span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-telemetry-mono text-caption-sm text-on-surface-variant bg-surface-container-high px-space-sm py-0.5 rounded-full">
+              اليوم • 09:15 ص
+            </span>
+</div>
+</div>
+<div class="bg-surface-container-low/70 rounded-lg p-space-md flex flex-col gap-space-xs">
+<span class="font-caption-sm text-caption-sm text-on-surface-variant">موضوع الواجب</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold leading-relaxed">
+            الجدول الدوري والتفاعلات الكيميائية
+          </span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-primary-container/15 text-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-caps text-label-caps">تم التسليم تلقائياً (4 من 4 صحيحة)</span>
+</div>
+<span class="font-telemetry-mono text-caption-sm font-bold">100% مكتمل</span>
+</div>
+<div class="flex flex-col pt-space-xs">
+<button aria-expanded="false" class="toggle-details-btn flex items-center justify-between w-full py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">visibility</span>
+<span class="font-caption-sm text-caption-sm">تمت صياغة الشرح والخيارات المتعددة بالكامل</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-telemetry-mono text-caption-sm text-on-surface-variant">MDR-94780</span>
+<span class="material-symbols-outlined text-[18px] transition-transform chevron-icon">expand_more</span>
+</div>
+</button>
+<div class="details-content hidden flex flex-col gap-space-sm mt-space-sm pt-space-sm bg-surface-container-lowest/80 rounded-lg p-space-md">
+<div class="flex items-center justify-between text-on-surface-variant font-telemetry-mono text-caption-sm">
+<span>طريقة الإجابة: تحليل نصوص الكتاب المدرسي</span>
+<span class="text-primary">زمن المعالجة: 1.2 ثانية</span>
+</div>
+<div class="flex flex-col gap-space-xs text-on-surface font-body-md text-body-md">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>س١: العناصر الفلزية في المجموعة الأولى -&gt; الفلزات القلوية</span>
+</div>
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>س٢: نوع التفاعل بين الحمض والقاعدة -&gt; تفاعل تعادل</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3: اللغة الإنجليزية -->
+<div class="assignment-card group relative overflow-hidden rounded-xl bg-surface-container/70 p-space-lg shadow-md transition-all hover:bg-surface-container" data-category="english" data-lesson="Unit 3: Past Continuous Tense" data-teacher="طارق العتيبي" data-title="اللغة الإنجليزية">
+<div class="absolute top-0 right-0 w-1.5 h-full bg-tertiary-container rounded-r"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-11 h-11 shrink-0 rounded-xl bg-tertiary-container/10 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">translate</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface truncate">اللغة الإنجليزية</span>
+<span class="font-caption-sm text-caption-sm text-on-surface-variant truncate">Super Goal 3</span>
+</div>
+<span class="font-caption-sm text-caption-sm text-on-surface-variant flex items-center gap-space-xs mt-0.5">
+<span class="material-symbols-outlined text-[13px]">person</span>
+                أ. طارق العتيبي
+              </span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-telemetry-mono text-caption-sm text-on-surface-variant bg-surface-container-high px-space-sm py-0.5 rounded-full">
+              أمس • 16:40
+            </span>
+</div>
+</div>
+<div class="bg-surface-container-low/70 rounded-lg p-space-md flex flex-col gap-space-xs">
+<span class="font-caption-sm text-caption-sm text-on-surface-variant">موضوع الواجب</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold leading-relaxed">
+            Unit 3: Past Continuous Tense and Sentence Formation
+          </span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-primary-container/15 text-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-caps text-label-caps">تم التسليم تلقائياً (8 من 8 صحيحة)</span>
+</div>
+<span class="font-telemetry-mono text-caption-sm font-bold">100% ممتاز</span>
+</div>
+<div class="flex flex-col pt-space-xs">
+<button aria-expanded="false" class="toggle-details-btn flex items-center justify-between w-full py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">visibility</span>
+<span class="font-caption-sm text-caption-sm">معاينة تصحيح القواعد النحوية ومطابقة النص</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-telemetry-mono text-caption-sm text-on-surface-variant">MDR-94620</span>
+<span class="material-symbols-outlined text-[18px] transition-transform chevron-icon">expand_more</span>
+</div>
+</button>
+<div class="details-content hidden flex flex-col gap-space-sm mt-space-sm pt-space-sm bg-surface-container-lowest/80 rounded-lg p-space-md">
+<div class="flex items-center justify-between text-on-surface-variant font-telemetry-mono text-caption-sm">
+<span>وحدة النماذج: NLP English Core</span>
+<span class="text-primary">زمن التنفيذ: 0.8 ثانية</span>
+</div>
+<div class="flex flex-col gap-space-xs text-on-surface font-body-md text-body-md">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Q1: They (were playing) football when it started raining.</span>
+</div>
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Q2: While she was reading, the bell (rang).</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 4: الدراسات الإسلامية -->
+<div class="assignment-card group relative overflow-hidden rounded-xl bg-surface-container/70 p-space-lg shadow-md transition-all hover:bg-surface-container" data-category="islamic" data-lesson="الفقه: أحكام البيوع والشروط فيها" data-teacher="فهد الحارثي" data-title="الدراسات الإسلامية">
+<div class="absolute top-0 right-0 w-1.5 h-full bg-primary-fixed-dim rounded-r"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-11 h-11 shrink-0 rounded-xl bg-primary-fixed-dim/10 text-primary-fixed-dim flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">menu_book</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface truncate">الدراسات الإسلامية</span>
+<span class="font-caption-sm text-caption-sm text-on-surface-variant truncate">الفقه والسلوك</span>
+</div>
+<span class="font-caption-sm text-caption-sm text-on-surface-variant flex items-center gap-space-xs mt-0.5">
+<span class="material-symbols-outlined text-[13px]">person</span>
+                أ. فهد الحارثي
+              </span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-telemetry-mono text-caption-sm text-on-surface-variant bg-surface-container-high px-space-sm py-0.5 rounded-full">
+              أمس • 11:05 ص
+            </span>
+</div>
+</div>
+<div class="bg-surface-container-low/70 rounded-lg p-space-md flex flex-col gap-space-xs">
+<span class="font-caption-sm text-caption-sm text-on-surface-variant">موضوع الواجب</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold leading-relaxed">
+            الفقه: أحكام البيوع والشروط الجائزة فيها
+          </span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-primary-container/15 text-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-caps text-label-caps">تم التسليم تلقائياً (6 من 6 صحيحة)</span>
+</div>
+<span class="font-telemetry-mono text-caption-sm font-bold">100% معتمد</span>
+</div>
+<div class="flex flex-col pt-space-xs">
+<button aria-expanded="false" class="toggle-details-btn flex items-center justify-between w-full py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">visibility</span>
+<span class="font-caption-sm text-caption-sm">معاينة الإجابات الفقهية والأدلة المسجلة</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-telemetry-mono text-caption-sm text-on-surface-variant">MDR-94518</span>
+<span class="material-symbols-outlined text-[18px] transition-transform chevron-icon">expand_more</span>
+</div>
+</button>
+<div class="details-content hidden flex flex-col gap-space-sm mt-space-sm pt-space-sm bg-surface-container-lowest/80 rounded-lg p-space-md">
+<div class="flex items-center justify-between text-on-surface-variant font-telemetry-mono text-caption-sm">
+<span>المصدر: المقررات الرسمية - وزارة التعليم</span>
+<span class="text-primary">زمن المعالجة: 1.0 ثانية</span>
+</div>
+<div class="flex flex-col gap-space-xs text-on-surface font-body-md text-body-md">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>س١: الأصل في المعاملات والبيوع -&gt; الإباحة والحل</span>
+</div>
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>س٢: شرط الرضا بين المتبايعين -&gt; شرط صحة</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty State Search Result (Hidden by default) -->
+<div class="hidden flex-col items-center justify-center p-space-xl text-center my-space-lg rounded-xl bg-surface-container-low" id="empty-state">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant mb-space-md">
+<span class="material-symbols-outlined text-[32px]">manage_search</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface">لا توجد نتائج مطابقة</span>
+<span class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-xs">
+      لم يتم العثور على أي واجب يطابق معايير البحث المدخلة. تحقق من صحة الكلمات أو أعد تعيين الفلاتر.
+    </span>
+</div>
+<!-- End of Stream & Export Action Section -->
+<div class="flex flex-col gap-space-sm mt-space-xl">
+<!-- Audit Trail Signoff -->
+<div class="flex items-center justify-center gap-space-xs text-on-surface-variant font-caption-sm text-caption-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">lock_clock</span>
+<span>جميع العمليات موثقة وموقعة رقمياً بحساب منصة مدرستي</span>
+</div>
+<!-- Export & Archive Actions Button Group -->
+<div class="flex flex-col gap-space-xs">
+<button class="flex items-center justify-center gap-space-sm w-full py-space-md px-space-lg rounded-xl bg-primary text-on-primary font-headline-md text-headline-md font-semibold transition-transform active:scale-[0.98] shadow-lg shadow-primary/20" id="export-pdf-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+<span>تصدير تقرير PDF معتمد للنتائج</span>
+</button>
+<button class="flex items-center justify-center gap-space-sm w-full py-space-md px-space-lg rounded-xl bg-surface-container-high text-on-surface font-body-md text-body-md hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">history</span>
+<span>عرض سجل الأشهر السابقة (أكتوبر، سبتمبر)</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    const searchInput = document.getElementById('search-input');
+    const clearBtn = document.getElementById('clear-search-btn');
+    const filterPills = document.querySelectorAll('.filter-pill');
+    const cards = document.querySelectorAll('.assignment-card');
+    const emptyState = document.getElementById('empty-state');
+    let currentFilter = 'all';
+
+    function applyFilterAndSearch() {
+      const query = (searchInput.value || '').trim().toLowerCase();
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        const title = card.getAttribute('data-title') || '';
+        const lesson = card.getAttribute('data-lesson') || '';
+        const teacher = card.getAttribute('data-teacher') || '';
+
+        const matchesFilter = (currentFilter === 'all') || (category === currentFilter);
+        const matchesQuery = !query || 
+          title.toLowerCase().includes(query) || 
+          lesson.toLowerCase().includes(query) || 
+          teacher.toLowerCase().includes(query);
+
+        if (matchesFilter && matchesQuery) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      if (visibleCount === 0) {
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+      } else {
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+      }
+    }
+
+    // Search Input listeners
+    if (searchInput) {
+      searchInput.addEventListener('input', () => {
+        if (searchInput.value.trim().length > 0) {
+          clearBtn.classList.remove('hidden');
+        } else {
+          clearBtn.classList.add('hidden');
+        }
+        applyFilterAndSearch();
+      });
+    }
+
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        clearBtn.classList.add('hidden');
+        searchInput.focus();
+        applyFilterAndSearch();
+      });
+    }
+
+    // Filter Pills interaction
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        filterPills.forEach(p => {
+          p.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          p.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        pill.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        pill.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+
+        currentFilter = pill.getAttribute('data-filter');
+        applyFilterAndSearch();
+      });
+    });
+
+    // Expandable details accordion
+    document.querySelectorAll('.toggle-details-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.assignment-card');
+        const content = card.querySelector('.details-content');
+        const chevron = btn.querySelector('.chevron-icon');
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+        if (isExpanded) {
+          content.classList.add('hidden');
+          chevron.classList.remove('rotate-180');
+          btn.setAttribute('aria-expanded', 'false');
+        } else {
+          content.classList.remove('hidden');
+          chevron.classList.add('rotate-180');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // Export PDF Feedback Interaction
+    const exportBtn = document.getElementById('export-pdf-btn');
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        const originalText = exportBtn.innerHTML;
+        exportBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[20px] animate-spin">sync</span>
+          <span>جاري إنشاء التقرير والتحميل...</span>
+        `;
+        setTimeout(() => {
+          exportBtn.innerHTML = `
+            <span class="material-symbols-outlined text-[20px]">check_circle</span>
+            <span>تم تجهيز التقرير بنجاح!</span>
+          `;
+          setTimeout(() => {
+            exportBtn.innerHTML = originalText;
+          }, 2400);
+        }, 1200);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">space_dashboard</span><span class="font-caption-sm text-caption-sm mt-space-xs">الرئيسية</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="auth-setup" href="#"><span class="material-symbols-outlined text-[22px]">sync_saved_locally</span><span class="font-caption-sm text-caption-sm mt-space-xs">الإعداد</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="pipeline" href="#"><span class="material-symbols-outlined text-[22px]">memory</span><span class="font-caption-sm text-caption-sm mt-space-xs">المسار</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] transition-colors text-primary font-bold" data-path="archive" href="#"><span class="material-symbols-outlined text-[22px]">assignment_turned_in</span><span class="font-caption-sm text-caption-sm mt-space-xs">الأرشيف</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="alerts" href="#"><span class="material-symbols-outlined text-[22px]">notifications_active</span><span class="font-caption-sm text-caption-sm mt-space-xs">الإشعارات</span></a></div></nav></body></html>
